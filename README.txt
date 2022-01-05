@@ -1,7 +1,16 @@
 #** SWBio DTP Machine Leanring Project - Scott Allen **
 
-#File contains the annotated code used in the project.
+This project sets out to analyse the data from the Scikit Learn webpage, Breast
+Cancer Wisconsin Diagnostic datset as part of the SWBio Data Science and Machine
+Learning module. The data should download automatically using the code given
+below. The code below can be copied directly into a Jupyter Notebook, 
+but the Notebook itself is also found within the repository. 
 
+Interpretation of the main findings are given in the assocaited report, Exploring 
+the Breast Cancer Wisconsin Diagnostic Dataset.doc.
+
+
+#Annotated code used in the project.
 _____________________________________________________________________________
 
 # Importing the various libraries/tools needed for my analysis.
