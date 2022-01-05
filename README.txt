@@ -7,7 +7,10 @@ below. The code below can be copied directly into a Jupyter Notebook,
 but the Notebook itself is also found within the repository. 
 
 Interpretation of the main findings are given in the assocaited report, Exploring 
-the Breast Cancer Wisconsin Diagnostic Dataset.doc.
+the Breast Cancer Wisconsin Diagnostic Dataset.doc. Examples of the output are 
+found within this report, along with all the outputs in the associated Notebook 
+linked within the repository.
+
 
 #Annotated code used in the project.
 _____________________________________________________________________________
