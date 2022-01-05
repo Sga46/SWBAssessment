@@ -39,7 +39,7 @@ _____
 
 from sklearn.datasets import load_breast_cancer
 data = load_breast_cancer()
-df = pd.DataFrame(dat.data, columns=dat.feature_names)
+df = pd.DataFrame(data.data, columns=dat.feature_names)
 
 # No missing values are found within the data, therefore polishing/cleaning step is unnecessary.
 
@@ -92,7 +92,7 @@ Malignant_corr = Malignant_df.corr()
 plt.figure(figsize=(15, 10))
 sns.heatmap(Malignant_corr[Malignant_corr<0.75], vmin=-1.0, vmax=1.0, square=True, cmap='PiYG')
 plt.title('Correlation of variable in Malignant cases')
-plt.savefig('Mal_Corr.png', dpi=300)
+#plt.savefig('Mal_Corr.png', dpi=300)
 
 _____
 
@@ -103,7 +103,7 @@ Benign_corr = Benign_df.corr()
 plt.figure(figsize=(15, 10))
 sns.heatmap(Benign_corr[Benign_corr<0.75], vmin=-1.0, vmax=1.0, square=True, cmap='PiYG')
 plt.title('Correlation of variable in Benign cases')
-plt.savefig('Benign_corr.png', dpi=300)
+#plt.savefig('Benign_corr.png', dpi=300)
 
 _____
 
@@ -113,7 +113,7 @@ _____
 Interesting_variables_plot = dft[['mean compactness','mean concave points','mean concavity','mean fractal dimension', 
                                   'mean radius','target']]
 sns.pairplot(Interesting_variables_plot, hue='target', size = 4, kind="reg")
-plt.savefig('interesting pairplots', dpi=300)
+#plt.savefig('interesting pairplots', dpi=300)
 
 #specific relationships were then looked at in further detail, such as:
 
@@ -143,7 +143,7 @@ cm = confusion_matrix(Y_test, Y_pred)
 sns.heatmap(cm,annot=True,cmap='PiYG')
 plt.xlabel('Predicted')
 plt.ylabel('True')
-plt.savefig('cm.png',dpi=300)
+#plt.savefig('cm.png',dpi=300)
 
 #tests accuracy of the model
 
@@ -165,7 +165,7 @@ cm = confusion_matrix(Y_test, Yn_pred)
 sns.heatmap(cm,annot=True,cmap='PiYG')
 plt.xlabel('Predicted')
 plt.ylabel('True')
-plt.savefig('cm.png',dpi=300)
+#plt.savefig('cm2.png',dpi=300)
 
 
 accuracy_score(Y_test,Yn_pred)
